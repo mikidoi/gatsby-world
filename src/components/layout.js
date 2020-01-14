@@ -1,6 +1,7 @@
 import { graphql, Link, useStaticQuery } from "gatsby"
 import React from "react"
 import styled from "styled-components"
+import "./layout.css"
 
 const Container = styled.div`
   margin: 3rem auto;
@@ -30,6 +31,9 @@ export default ({ children }) => {
       >
         <Link to={`/`}>
           <h3>{data.site.siteMetadata.title}</h3>
+        </Link>
+        <Link to={`/ashiya/`}>
+          <h3>芦屋のこと</h3>
         </Link>
         <Link to={`/about/`}>
           <h3>私のこと</h3>
