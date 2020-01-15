@@ -1,41 +1,29 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
   Gatsby, GraphQL and Contentful Blog project
 </h1>
+<h2 align="center">
+  - Live Themable Responsive Blog -
+</h2>
 
-## 🧐 What's inside?
+## What are used in this project :game_die:
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+- **Gatsby** This project is build on the top of Gatsby.
+- **GraphQL** Gatsby’s data layer is powered by GraphQL.
+- **Contentful** CMS
+- **Styled COmponent**
+- **CSS variables**
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+## CSS rules :bouquet:
 
-## 🎓 Learning Gatsby
+- **CSS variables** - global styling in layout.css for theming
+- **Styled Components** - React component itself
+- **Inline CSS** - if it is very specific CSS and not used for anywhere else.
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+## About this project :star:
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+This Blog is about my amazing grandmother.
+I want to tell a story about her to my daughter and my niece and nephew.
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+At the beginning, it is only in Japanese but hopefully other languages will come later!
 
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/).
