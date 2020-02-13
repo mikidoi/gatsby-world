@@ -5,13 +5,20 @@
   - Live Themable Responsive Blog -
 </h2>
 
+## How to start this project
+
+run `yarn` to install packages.
+
+run `gatsby develop` to start this project in http://localhost:8000/
+
 ## What are used in this project :game_die:
 
-- **Gatsby** This project is build on the top of Gatsby.
-- **GraphQL** Gatsby’s data layer is powered by GraphQL.
-- **Contentful** CMS
+- **Gatsby** - This project is build on the top of Gatsby.
+- **GraphQL** - Gatsby’s data layer is powered by GraphQL.
+- **Contentful** - CMS
 - **Styled COmponent**
 - **CSS variables**
+- **Formik**
 
 ## CSS rules :bouquet:
 
@@ -21,7 +28,7 @@
 
 ## About this project :star:
 
-This Blog is about my amazing grandmother.
+This Blog is about my amazing grandmother who passed away at age 96.
 I want to tell a story about her to my daughter and my niece and nephew.
 
 At the beginning, it is only in Japanese but hopefully other languages will come later!

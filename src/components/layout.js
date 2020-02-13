@@ -2,9 +2,10 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import "./layout.css"
+import ThemeSelectionForm from "./ThemeSelectionForm"
 
 const Container = styled.div`
-  margin: 3rem auto;
+  margin: 0 auto;
   max-width: 600px;
 `
 
@@ -39,6 +40,7 @@ export default ({ children }) => {
           <h3>私のこと</h3>
         </Link>
       </header>
+      <ThemeSelectionForm />
       {children}
     </Container>
   )

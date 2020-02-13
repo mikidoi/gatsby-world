@@ -1,5 +1,5 @@
 :root {
-  --background-color: #2eec96;
+  --background-color: #adfbc6;
   --text-color: #222;
   --text-white-color: #fff;
   --label-color: #1a905d;
@@ -17,10 +17,13 @@ body {
 
 h1 {
   font-family: "Hannari";
+  font-size: 3rem;
   writing-mode: vertical-rl;
   margin-left: auto;
   margin-right: auto;
   color: var(--text-white-color);
+  text-align: center;
+  flex-basis: 100%;
 }
 
 p {

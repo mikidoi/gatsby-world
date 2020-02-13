@@ -31,7 +31,12 @@ const BackgroundSection = ({ className }) => (
           }}
         >
           <h1>おおきな　にじ</h1>
-          <a href="https://www.pexels.com/photo/multicolored-abstract-art-2062637/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">
+          <a
+            style={{
+              marginLeft: `auto`,
+            }}
+            href="https://www.pexels.com/photo/multicolored-abstract-art-2062637/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+          >
             Photo by Amber Lamoreaux from Pexels
           </a>
         </BackgroundImage>
@@ -45,5 +50,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-position: bottom center;
   background-repeat: repeat-y;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 `
 export default StyledBackgroundSection
