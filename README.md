@@ -19,6 +19,7 @@ run `gatsby develop` to start this project in http://localhost:8000/
 - **Styled COmponent**
 - **CSS variables**
 - **Formik**
+- **React color** - Beautiful color palette(http://casesandberg.github.io/react-color/)
 
 ## CSS rules :bouquet:
 
