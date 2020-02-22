@@ -23,9 +23,10 @@ run `gatsby develop` to start this project in http://localhost:8000/
 
 ## CSS rules :bouquet:
 
-- **CSS variables** - global styling in layout.css for theming
+- **CSS variables** - global styling(font, color) in layout.css for theming
 - **Styled Components** - React component itself
 - **Inline CSS** - if it is very specific CSS and not used for anywhere else.
+- **CSS position: sticky** - `position: sticky` are only sticky with their parent element.
 
 ## About this project :star:
 

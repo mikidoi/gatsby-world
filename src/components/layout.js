@@ -9,6 +9,21 @@ const Container = styled.div`
   max-width: 600px;
 `
 
+const StyledNav = styled.nav`
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  top: 0.5rem;
+  position: sticky;
+  z-index: 100;
+  a {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+`
+
 export default ({ children }) => {
   const data = useStaticQuery(
     graphql`
@@ -23,23 +38,11 @@ export default ({ children }) => {
   )
   return (
     <Container>
-      <header
-        style={{
-          marginBottom: `1.5rem`,
-          display: `flex`,
-          justifyContent: `space-between`,
-        }}
-      >
-        <Link to={`/`}>
-          <h3>{data.site.siteMetadata.title}</h3>
-        </Link>
-        <Link to={`/ashiya/`}>
-          <h3>芦屋のこと</h3>
-        </Link>
-        <Link to={`/about/`}>
-          <h3>私のこと</h3>
-        </Link>
-      </header>
+      <StyledNav>
+        <Link to={`/`}>{data.site.siteMetadata.title}</Link>
+        <Link to={`/ashiya/`}>芦屋のこと</Link>
+        <Link to={`/about/`}>私のこと</Link>
+      </StyledNav>
       <ThemeSelectionForm />
       {children}
     </Container>
