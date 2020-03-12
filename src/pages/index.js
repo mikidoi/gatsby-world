@@ -1,24 +1,23 @@
 import { graphql, Link } from "gatsby"
+import get from "lodash/get"
 import React from "react"
 import StyledBackgroundSection from "../components/BackgroundSection"
 import Layout from "../components/layout"
 
 export default ({ data }) => {
-  // console.log(data)
+  console.log(data)
+  const post = get(data, "allContentfulEssay")
   return (
     <>
       <StyledBackgroundSection />
-      <Layout>
+      <Layout post={post}>
         <div>
-          <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-          {data.allMarkdownRemark.edges.map(({ node }) => (
+          {post.nodes.map(node => (
             <div key={node.id}>
-              <Link to={node.fields.slug}>
+              <Link to={node.slug}>
                 <h3>
-                  {node.frontmatter.title}{" "}
-                  <span>— {node.frontmatter.date}</span>
+                  {node.title} <span>— {node.publishedDate}</span>
                 </h3>
-                <p>{node.excerpt}</p>
               </Link>
             </div>
           ))}
@@ -29,20 +28,16 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "YYYY-MM-DD")
+  query MyQuery {
+    allContentfulEssay {
+      nodes {
+        slug
+        title
+        publishedDate(formatString: "")
+        body {
+          childMarkdownRemark {
+            html
           }
-          fields {
-            slug
-          }
-          excerpt
         }
       }
     }

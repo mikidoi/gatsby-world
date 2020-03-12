@@ -1,21 +1,31 @@
-import { graphql } from "gatsby"
+import get from "lodash/get"
 import React from "react"
 import Layout from "../components/layout"
+
 export default ({ data }) => {
-  const post = data.markdownRemark
+  const post = get(data, "contentfulEssay")
+  const { title, body } = post
+
   return (
     <Layout>
-      <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <h1>{title}</h1>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: body.childMarkdownRemark.html,
+        }}
+      />
     </Layout>
   )
 }
-export const query = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
+
+export const pageQuery = graphql`
+  query EssayBySlug($slug: String!) {
+    contentfulEssay(slug: { eq: $slug }) {
+      title
+      body {
+        childMarkdownRemark {
+          html
+        }
       }
     }
   }

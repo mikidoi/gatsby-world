@@ -35,13 +35,12 @@ const StyledCirclePicker = styled(CirclePicker)`
 `
 
 const ThemeSelectionForm = () => {
-  const [color, setColor] = useState("#2eec96")
+  const [color, setColor] = useState({ hex: "#adfbc6" })
   const [showColorPicker, setShowColorPicker] = useState(false)
 
   //1.Store values of CSS Variables by usign useEffect on refresh
   //2.Use react-color(http://casesandberg.github.io/react-color/)
   const handleInputChange = (property, pixels, color) => {
-    console.log("color: ", color)
     document.documentElement.style.setProperty(
       `--${property}`,
       `${color.hex}${pixels ? "px" : ""}`

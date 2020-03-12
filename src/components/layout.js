@@ -1,4 +1,4 @@
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import "./layout.css"
@@ -25,21 +25,23 @@ const StyledNav = styled.nav`
 `
 
 export default ({ children }) => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  )
+  // const data = useStaticQuery(
+  //   graphql`
+  //     query MyQuery {
+  //       allContentfulEssay {
+  //         nodes {
+  //           title
+  //         }
+  //       }
+  //     }
+  //   `
+  // )
+  // const post = get(data, "allContentfulEssay")
   return (
     <Container>
       <StyledNav>
-        <Link to={`/`}>{data.site.siteMetadata.title}</Link>
+        {/* <Link to={`/`}>{post.nodes[0].title}</Link> */}
+        <Link to={`/`}>Home</Link>
         <Link to={`/ashiya/`}>芦屋のこと</Link>
         <Link to={`/about/`}>私のこと</Link>
       </StyledNav>

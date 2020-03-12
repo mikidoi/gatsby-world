@@ -1,8 +1,4 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
+require("dotenv").config({ path: ".env" })
 
 module.exports = {
   siteMetadata: {
@@ -51,5 +47,14 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        // your_space_id_grab_it_from_contentful
+        accessToken: process.env.CONTENTFUL_DELIVERY_ACCESS_TOKEN,
+        //your_token_id_grab_it_from_contentful'
+      },
+    },
   ],
 }
