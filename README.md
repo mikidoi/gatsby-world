@@ -38,6 +38,7 @@ At the beginning, it is only in Japanese but hopefully other languages will come
 ## This project is deployed by Surge.
 
 In the root folder, run this command to build.
+And also after you add one blog in contentful, run this command.
 `gatsby build`
 
 Deploy my site by publishing the generated files to surge.sh.

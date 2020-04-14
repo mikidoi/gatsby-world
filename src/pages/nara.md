@@ -1,6 +1,11 @@
 ---
-title: "えみちゃん"
+title: "奈良に疎開していた頃"
 date: "2019-12-24"
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4n0xNbfJLR8" frameborder="0" allowfullscreen></iframe>
+おばあちゃんは第二次世界大戦のころ、奈良に疎開をしていました。
+
+おじいちゃんが病院で働いて、離れのようなところに住んでいたそうです。
+
+戦争中は食べ物があまりなく、奈良の鹿もお腹を空かせていて、
+台所にの窓からニョキッと首を中に入れてきた鹿もいたそうです。
