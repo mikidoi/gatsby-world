@@ -1,3 +1,4 @@
+/* @import url("https://fonts.googleapis.com/earlyaccess/hannari.css"); */
 :root {
   --background-color: #adfbc6;
   --text-color: #222;
@@ -15,20 +16,20 @@ body {
   background-color: var(--background-color);
 }
 
-h1,
+h2,
 h3,
 nav {
-  font-family: "Hannari";
+  font-family: "Sawarabi Mincho";
 }
 
 h1 {
+  font-family: "Hannari", serif;
   margin-bottom: 2.5rem;
   margin-top: 2.5rem;
 }
 
 nav {
   font-size: 1.5rem;
-  font-weight: bold;
   background-color: var(--background-color);
 }
 

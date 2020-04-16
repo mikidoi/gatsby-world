@@ -2,7 +2,9 @@ require("dotenv").config({ path: ".env" })
 
 module.exports = {
   siteMetadata: {
-    title: "Home",
+    title: "Big rainbow",
+    description: `This Blog is about my amazing grandmother who passed away at age 96.`,
+    author: `miki doi`,
   },
   plugins: [
     {
@@ -36,10 +38,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Hannari`,
-          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
-        ],
+        fonts: [`Hannari`, `serif`],
         display: "swap",
       },
     },
@@ -47,6 +46,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
