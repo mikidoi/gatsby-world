@@ -42,11 +42,6 @@ module.exports = {
         display: "swap",
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -56,5 +51,10 @@ module.exports = {
         //your_token_id_grab_it_from_contentful'
       },
     },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
   ],
 }

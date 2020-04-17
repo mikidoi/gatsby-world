@@ -1,10 +1,10 @@
 import { Link } from "gatsby"
 import get from "lodash/get"
 import React from "react"
-import { Helmet } from "react-helmet"
 import styled from "styled-components"
 import StyledBackgroundSection from "../components/BackgroundSection"
 import Layout from "../components/layout"
+import SEO from "../components/Seo"
 
 const MenuTitle = styled.p`
   margin-bottom: 2rem;
@@ -23,16 +23,8 @@ export default ({ data }) => {
   const post = get(data, "allContentfulEssay")
   return (
     <>
-      <Helmet>
-        <link
-          href="https://fonts.googleapis.com/earlyaccess/hannari.css"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho"
-          rel="stylesheet"
-        ></link>
-      </Helmet>
+      <SEO />
+
       <StyledBackgroundSection />
       <Layout post={post}>
         <div style={{ textAlign: "center", marginTop: "5rem" }}>

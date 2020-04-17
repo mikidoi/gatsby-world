@@ -1,7 +1,7 @@
 import get from "lodash/get"
 import React from "react"
-import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
+import SEO from "../components/SEO"
 
 export default ({ data }) => {
   const post = get(data, "contentfulEssay")
@@ -9,16 +9,7 @@ export default ({ data }) => {
 
   return (
     <>
-      <Helmet>
-        <link
-          href="https://fonts.googleapis.com/earlyaccess/hannari.css"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho"
-          rel="stylesheet"
-        ></link>
-      </Helmet>
+      <SEO title={title} />
       <Layout>
         <h1>{title}</h1>
         <div
