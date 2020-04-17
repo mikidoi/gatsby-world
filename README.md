@@ -45,8 +45,6 @@ Deploy my site by publishing the generated files to surge.sh.
 
 End then press enter key to see the web address.
 
-http://holistic-grape.surge.sh/
-
 ## How to add Contentful on top of gatsby project.
 
 https://www.gatsbyjs.org/docs/sourcing-from-contentful/

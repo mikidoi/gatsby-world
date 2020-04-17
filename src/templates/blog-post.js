@@ -1,5 +1,6 @@
 import get from "lodash/get"
 import React from "react"
+import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 
 export default ({ data }) => {
@@ -7,14 +8,26 @@ export default ({ data }) => {
   const { title, body } = post
 
   return (
-    <Layout>
-      <h1>{title}</h1>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: body.childMarkdownRemark.html,
-        }}
-      />
-    </Layout>
+    <>
+      <Helmet>
+        <link
+          href="https://fonts.googleapis.com/earlyaccess/hannari.css"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho"
+          rel="stylesheet"
+        ></link>
+      </Helmet>
+      <Layout>
+        <h1>{title}</h1>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: body.childMarkdownRemark.html,
+          }}
+        />
+      </Layout>
+    </>
   )
 }
 
