@@ -18,7 +18,7 @@ run `gatsby develop` to start this project in http://localhost:8000/
 - **Contentful** - CMS
 - **Styled COmponent**
 - **CSS variables**
-- **Formik**
+- **PWA** - Can be a Progressive Web App
 - **React color** - Beautiful color palette(http://casesandberg.github.io/react-color/)
 
 ## CSS rules :bouquet:

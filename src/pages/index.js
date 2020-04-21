@@ -19,7 +19,6 @@ const MenuItem = styled.div`
 `
 
 export default ({ data }) => {
-  console.log(data)
   const post = get(data, "allContentfulEssay")
   return (
     <>

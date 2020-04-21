@@ -34,9 +34,23 @@ const BackgroundSection = ({ className }) => (
             style={{
               marginLeft: `auto`,
             }}
+            target="_blank"
             href="https://www.pexels.com/photo/multicolored-abstract-art-2062637/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
           >
             Photo by Amber Lamoreaux from Pexels
+          </a>
+          <a
+            style={{
+              marginLeft: `auto`,
+            }}
+            target="_blank"
+            href="https://icons8.com/icons/set/rgb-circle-1"
+          >
+            Color Wheel icon
+          </a>{" "}
+          icon by{" "}
+          <a target="_blank" href="https://icons8.com">
+            Icons8
           </a>
         </BackgroundImage>
       )

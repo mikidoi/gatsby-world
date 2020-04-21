@@ -4,7 +4,6 @@ import React from "react"
 import { Helmet } from "react-helmet"
 
 const SEO = ({ description, lang, meta, title }) => {
-  console.log("Hello")
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,9 +18,7 @@ const SEO = ({ description, lang, meta, title }) => {
     `
   )
 
-  console.log("site: ", site)
   const siteTitle = title || site.siteMetadata.title
-  console.log("siteTitle: ", siteTitle)
   const metaDescription = description || site.siteMetadata.description
 
   return (
