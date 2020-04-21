@@ -16,7 +16,7 @@ run `gatsby develop` to start this project in http://localhost:8000/
 - **Gatsby** - This project is build on the top of Gatsby.　 It is a static site generator.
 - **GraphQL** - Gatsby’s data layer is powered by GraphQL.
 - **Contentful** - CMS
-- **Styled COmponent**
+- **Styled Component**
 - **CSS variables**
 - **PWA** - Can be a Progressive Web App
 - **React color** - Beautiful color palette(http://casesandberg.github.io/react-color/)
@@ -58,3 +58,11 @@ Run this command
 Run this command
 
 `gatsby clean`
+
+## How to use a local HTTPS server during development
+
+Run this command
+
+`gatsby develop "--https"`
+
+And open https://localhost:8000/ in Firefox

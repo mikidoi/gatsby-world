@@ -35,6 +35,7 @@ const BackgroundSection = ({ className }) => (
               marginLeft: `auto`,
             }}
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.pexels.com/photo/multicolored-abstract-art-2062637/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
           >
             Photo by Amber Lamoreaux from Pexels
@@ -44,12 +45,17 @@ const BackgroundSection = ({ className }) => (
               marginLeft: `auto`,
             }}
             target="_blank"
+            rel="noopener noreferrer"
             href="https://icons8.com/icons/set/rgb-circle-1"
           >
             Color Wheel icon
           </a>{" "}
           icon by{" "}
-          <a target="_blank" href="https://icons8.com">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://icons8.com"
+          >
             Icons8
           </a>
         </BackgroundImage>
