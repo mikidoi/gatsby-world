@@ -25,9 +25,9 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  console.log("result: ", result)
-
-  result.data.allContentfulEssay.nodes.forEach(node => {
+  const articles = result.data.allContentfulEssay.nodes
+  console.log("articles: ", articles)
+  articles.forEach((node, index) => {
     createPage({
       path: node.slug,
       component: path.resolve(`./src/templates/blog-post.js`),
@@ -35,6 +35,8 @@ exports.createPages = async ({ graphql, actions }) => {
         // Data passed to context is available
         // in page queries as GraphQL variables.
         slug: node.slug,
+        prev: index === 0 ? null : articles[index - 1],
+        next: index === articles.length - 1 ? null : articles[index + 1],
       },
     })
   })

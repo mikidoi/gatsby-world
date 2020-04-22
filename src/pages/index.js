@@ -30,7 +30,7 @@ export default ({ data }) => {
           <MenuTitle>もくじ</MenuTitle>
           {post.nodes.map(node => (
             <MenuItem key={node.id}>
-              <Link to={node.slug}>
+              <Link to={`/${node.slug}`}>
                 <h2>{node.title}</h2>
                 <span>{node.publishedDate}</span>
               </Link>

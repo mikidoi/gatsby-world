@@ -30,34 +30,44 @@ const BackgroundSection = ({ className }) => (
           }}
         >
           <h1>おおきな　にじ</h1>
-          <a
-            style={{
-              marginLeft: `auto`,
-            }}
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.pexels.com/photo/multicolored-abstract-art-2062637/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
-          >
-            Photo by Amber Lamoreaux from Pexels
-          </a>
-          <a
-            style={{
-              marginLeft: `auto`,
-            }}
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://icons8.com/icons/set/rgb-circle-1"
-          >
-            Color Wheel icon
-          </a>{" "}
-          icon by{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://icons8.com"
-          >
-            Icons8
-          </a>
+          <div>
+            Photo by{" "}
+            <a
+              style={{
+                marginLeft: `auto`,
+              }}
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.pexels.com/photo/multicolored-abstract-art-2062637/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+            >
+              Amber Lamoreaux from Pexels
+            </a>
+            <a
+              style={{
+                marginLeft: `auto`,
+              }}
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://icons8.com/icons/set/rgb-circle-1"
+            >
+              Color Wheel icon
+            </a>{" "}
+            icon by{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://icons8.com"
+            >
+              Icons8
+            </a>
+            <a href="https://www.flaticon.com/authors/lyolya" title="Lyolya">
+              Lyolya
+            </a>{" "}
+            from{" "}
+            <a href="https://www.flaticon.com/" title="Flaticon">
+              www.flaticon.com
+            </a>
+          </div>
         </BackgroundImage>
       )
     }}
