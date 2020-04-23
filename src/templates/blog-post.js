@@ -21,7 +21,6 @@ const StyledRightArrow = styled(Arrow)`
 `
 
 export default ({ data, pageContext }) => {
-  console.log("pageContext: ", pageContext)
   const post = get(data, "contentfulEssay")
   const { title, body } = post
 

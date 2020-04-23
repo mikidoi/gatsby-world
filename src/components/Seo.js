@@ -48,11 +48,11 @@ const SEO = ({ description, lang, meta, title }) => {
       ].concat(meta)}
     >
       <link
-        href="https://fonts.googleapis.com/earlyaccess/hannari.css"
+        href="https://fonts.googleapis.com/earlyaccess/hannari.css&display=swap"
         rel="stylesheet"
       />
       <link
-        href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho"
+        href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap"
         rel="stylesheet"
       ></link>
     </Helmet>

@@ -10,6 +10,7 @@ const MenuTitle = styled.p`
   margin-bottom: 2rem;
   font-size: 1rem;
   font-family: "Hannari";
+  font-display: swap;
   font-weight: bold;
 `
 

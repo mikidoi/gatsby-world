@@ -26,7 +26,6 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
   const articles = result.data.allContentfulEssay.nodes
-  console.log("articles: ", articles)
   articles.forEach((node, index) => {
     createPage({
       path: node.slug,
