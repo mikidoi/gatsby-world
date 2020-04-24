@@ -48,7 +48,7 @@ const SEO = ({ description, lang, meta, title }) => {
       ].concat(meta)}
     >
       <link
-        href="https://fonts.googleapis.com/earlyaccess/hannari.css&display=swap"
+        href="https://fonts.googleapis.com/earlyaccess/hannari.css"
         rel="stylesheet"
       />
       <link

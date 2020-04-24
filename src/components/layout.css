@@ -33,7 +33,7 @@ h1 {
   color: var(--text-pink-color);
   text-align: center;
   flex-basis: 100%;
-  font-family: "Hannari", serif;
+  font-family: "Hannari";
 }
 
 nav {
