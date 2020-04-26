@@ -5,8 +5,10 @@ import get from "lodash/get"
 import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import StyledBackgroundSection from "../components/BackgroundSection"
+import IconWrapper from "../components/IconWrapper"
 import Layout from "../components/layout"
 import SEO from "../components/Seo"
+import CarouselIcon from "../images/carousel.svg"
 
 const MenuTitle = styled.p`
   margin-bottom: 2rem;
@@ -19,7 +21,32 @@ const MenuItem = styled.div`
   border-top: 1px solid black;
 `
 
-const Loader = () => <div>loading</div>
+const StyledCarouselIcon = styled(CarouselIcon)`
+  width: 3rem;
+`
+
+const LoaderWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`
+const InsideWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`
+
+const Loader = () => (
+  <LoaderWrapper>
+    <InsideWrapper>
+      <IconWrapper>
+        <StyledCarouselIcon />
+      </IconWrapper>
+      <span>loading...</span>
+    </InsideWrapper>
+  </LoaderWrapper>
+)
 export default ({ data }) => {
   const [loading, setLoading] = useState(true)
   const post = get(data, "allContentfulEssay")
