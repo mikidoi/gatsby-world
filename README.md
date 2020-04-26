@@ -53,12 +53,6 @@ Run this command
 
 `yarn --save gatsby-source-contentful`
 
-## clear cache
-
-Run this command
-
-`gatsby clean`
-
 ## How to use a local HTTPS server during development
 
 Run this command
@@ -66,3 +60,9 @@ Run this command
 `gatsby develop "--https"`
 
 And open https://localhost:8000/ in Firefox
+
+## How to clear cache
+
+Run this command
+
+`gatsby clean`
